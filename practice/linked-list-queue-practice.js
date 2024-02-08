@@ -138,9 +138,9 @@ class SinglyLinkedList {
   print() {
     let current = this.head;
     while (current) {
-        process.stdout.write(`${current.value} -> `);
-        current = current.next;
-     }
+      process.stdout.write(`${current.value} -> `);
+      current = current.next;
+    }
     console.log("NULL"); // we indicate we are at end
   }
 }
@@ -198,12 +198,11 @@ class DoublyLinkedList {
   print() {
     let current = this.head;
     while (current) {
-        process.stdout.write(`${current.value} -> `);
-        current = current.next;
-     }
+      process.stdout.write(`${current.value} -> `);
+      current = current.next;
+    }
     console.log("NULL"); // we indicate we are at end
   }
-
 }
 
 const list = new SinglyLinkedList();
@@ -219,15 +218,13 @@ list.print();
 const reversed = list.reverse();
 reversed.print();
 
-    // let cur = reversed.head;
-    // for (let i = 6; i >= 1; i--) {
-    //   expect(cur.value).to.equal(i);
-    //   cur = cur.next;
-    // }
+// let cur = reversed.head;
+// for (let i = 6; i >= 1; i--) {
+//   expect(cur.value).to.equal(i);
+//   cur = cur.next;
+// }
 
-    // expect(cur).to.equal(null);
-
-
+// expect(cur).to.equal(null);
 
 module.exports = {
   SinglyLinkedNode,
